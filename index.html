@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Imposto de Renda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+
+    <h1>Bem Vindo ao Cálculo IR!</h1>
+
+    <label for="salario">Salario mensal (R$):</label>
+    <input type="number" id="salario" name="salario" required>
+
+    <button id="calcular" onclick="calcImp()">Calcular</button>
+
+    <h2>Resultado</h2>
+    <p>O imposto devido é R$: <span id="resultado"></span> </p>
+    <br>
+    <p>A alíquota efetiva é de: <span id="porcento"></span><span id="simbolo"></span></p>
+    
+</body>
+</html>
