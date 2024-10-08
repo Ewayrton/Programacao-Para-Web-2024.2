@@ -22,18 +22,18 @@ function calcImp(){
  let faixa3 = 3751.05;
  let faixa4 = 4664.68;
 
- if (salario  <= 2259.2){
+ if (salario  <= faixa1){
     salario = 0;
 
- }else if (salario <= 2826.65){
+ }else if (salario <= faixa2){
    ir = (salario - faixa1) * 0.075;
     
 
- }else if (salario <= 3751.05){
+ }else if (salario <= faixa3){
    ir = ((faixa2 - faixa1) * 0.075) + ((salario - faixa2) * 0.15);
     
 
- }else if (salario <= 4664.68){
+ }else if (salario <= faixa4){
    ir = ((faixa2 - faixa1) * 0.075) + ((faixa3 - faixa2) * 0.15) + ((salario - faixa3) * 0.225);
     
 
